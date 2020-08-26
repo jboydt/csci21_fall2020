@@ -1,8 +1,7 @@
-/* ASSIGNMENT NAME
- *
- * PROGRAMMER NAME
- * DATE
- */
+// ASSIGNMENT NAME
+// PROGRAMMER NAME
+//
+// DATE
 #include <iostream>
 
 // using namespace std;

@@ -1,8 +1,7 @@
-/* ASSIGNMENT NAME
- *
- * PROGRAMMER NAME
- * DATE
- */
+// ASSIGNMENT NAME
+// PROGRAMMER NAME
+//
+// DATE
  #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
  #include "doctest.h"
 
@@ -39,9 +38,9 @@ string toString(const Item &i) {
   return out.str();
 }
 
-/*
- * Unit test. Do not alter.
- */
+//
+// Unit test. Do not alter.
+//
 
  TEST_CASE("struct and helper functions") {
    Item item;

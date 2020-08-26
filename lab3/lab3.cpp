@@ -1,8 +1,7 @@
-/* ASSIGNMENT NAME
- *
- * PROGRAMMER NAME
- * DATE
- */
+// ASSIGNMENT NAME
+// PROGRAMMER NAME
+//
+// DATE
  #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
  #include "doctest.h"
 
@@ -41,9 +40,9 @@ double fahrenheitToCelsius(double fahrenheitTemp) {
 
 }
 
-/*
- * Unit test.
- */
+//
+// Unit test. Do not alter.
+//
 
  TEST_CASE("Function implementations") {
    CHECK(greet("") == string("Nice to meet you."));
