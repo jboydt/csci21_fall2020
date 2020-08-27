@@ -46,22 +46,22 @@ string toString(const Item &i) {
    Item item;
 
    initItem(item, "Apples", 0.9, 3);
-   CHECK(item.name == "Apples");
-   CHECK(item.price == doctest::Approx(0.9));
-   CHECK(item.quantity == 3);
-   CHECK(totalValue(item) == doctest::Approx(2.7));
-   CHECK(toString(item) == string("Apples (price: $0.90, quantity: 3)"));
+   CHECK_EQ(item.name, "Apples");
+   CHECK_EQ(item.price, doctest::Approx(0.9));
+   CHECK_EQ(item.quantity, 3);
+   CHECK_EQ(totalValue(item), doctest::Approx(2.7));
+   CHECK_EQ(toString(item), string("Apples (price: $0.90, quantity: 3)"));
 
    reduceQuantity(item, 2);
-   CHECK(item.quantity == 1);
+   CHECK_EQ(item.quantity, 1);
 
    reduceQuantity(item, 2);
-   CHECK(item.quantity == 0);
-   CHECK(totalValue(item) == doctest::Approx(0.0));
-   CHECK(toString(item) == string("Apples (price: $0.90, quantity: 0)"));
+   CHECK_EQ(item.quantity, 0);
+   CHECK_EQ(totalValue(item), doctest::Approx(0.0));
+   CHECK_EQ(toString(item), string("Apples (price: $0.90, quantity: 0)"));
 
    increaseQuantity(item, 10);
-   CHECK(item.quantity == 10);
-   CHECK(totalValue(item) == doctest::Approx(9.0));
-   CHECK(toString(item) == string("Apples (price: $0.90, quantity: 10)"));
+   CHECK_EQ(item.quantity, 10);
+   CHECK_EQ(totalValue(item), doctest::Approx(9.0));
+   CHECK_EQ(toString(item), string("Apples (price: $0.90, quantity: 10)"));
  }

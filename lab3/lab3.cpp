@@ -45,27 +45,27 @@ double fahrenheitToCelsius(double fahrenheitTemp) {
 //
 
  TEST_CASE("Function implementations") {
-   CHECK(greet("") == string("Nice to meet you."));
-   CHECK(greet("Jane") == string("Nice to meet you, Jane."));
+   CHECK_EQ(greet(""), string("Nice to meet you."));
+   CHECK_EQ(greet("Jane"), string("Nice to meet you, Jane."));
 
-   CHECK(isFactor(100, 25) == true);
-   CHECK(isFactor(100, 24) == false);
+   CHECK_EQ(isFactor(100, 25), true);
+   CHECK_EQ(isFactor(100, 24), false);
 
    unsigned int quarters, dimes, nickels, pennies;
    makeChange(41, quarters, dimes, nickels, pennies);
-   CHECK(quarters == 1);
-   CHECK(dimes == 1);
-   CHECK(nickels == 1);
-   CHECK(pennies == 1);
+   CHECK_EQ(quarters, 1);
+   CHECK_EQ(dimes, 1);
+   CHECK_EQ(nickels, 1);
+   CHECK_EQ(pennies, 1);
    makeChange(0, quarters, dimes, nickels, pennies);
-   CHECK(quarters == 0);
-   CHECK(dimes == 0);
-   CHECK(nickels == 0);
-   CHECK(pennies == 0);
+   CHECK_EQ(quarters, 0);
+   CHECK_EQ(dimes, 0);
+   CHECK_EQ(nickels, 0);
+   CHECK_EQ(pennies, 0);
 
-   CHECK(celsiusToFahrenheit(0.0) == doctest::Approx(32.0));
-   CHECK(celsiusToFahrenheit(100.0) == doctest::Approx(212.0));
+   CHECK_EQ(celsiusToFahrenheit(0.0), doctest::Approx(32.0));
+   CHECK_EQ(celsiusToFahrenheit(100.0), doctest::Approx(212.0));
 
-   CHECK(fahrenheitToCelsius(32.0) == doctest::Approx(0.0));
-   CHECK(fahrenheitToCelsius(212.0) == doctest::Approx(100.0));
+   CHECK_EQ(fahrenheitToCelsius(32.0), doctest::Approx(0.0));
+   CHECK_EQ(fahrenheitToCelsius(212.0), doctest::Approx(100.0));
  }
