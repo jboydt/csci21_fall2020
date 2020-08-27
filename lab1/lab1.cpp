@@ -68,7 +68,7 @@ int main() {
   // 20. Display the result of dividing the first float by the second
   //    e.g., 3.20 / 2.10 = 1.52 (use the two variables and the calculated value in the output)
 
-  // QUESTION: Why is there modulo (%) operation required for the float variables?
+  // QUESTION: Why is there no modulo (%) operation required for the float variables?
 
   return 0;
 }
