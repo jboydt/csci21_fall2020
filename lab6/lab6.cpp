@@ -44,7 +44,6 @@ int main(int argc, char *argv[]) {
   //
   // istringstream can help here
   // stoi() can help here
-  }
 
   return 0;
 }
