@@ -10,17 +10,17 @@
 //   cin  instead of std::cin
 //   endl instead of std::endl
 
-// QUESTIONs do not have to be answered -- they are there for your consideration.
-
 int main() {
   // 1. Print a greeting
 
   // 2. Declare 2 integer variables
 
   // 3. Prompt for the first integer
+
   // 4. Read in the first integer
 
   // 5. Prompt for the second integer
+
   // 6. Read in the second integer
 
   // 7. Display the result of adding the two variables together
@@ -43,9 +43,11 @@ int main() {
   // 12. Declare 2 float variables
 
   // 13. Prompt for the first float
+
   // 14. Read in the first float
 
   // 15. Prompt for the second float
+  
   // 16. Read in the second float
 
   // This code will "pretty print" the float variables.
@@ -67,8 +69,6 @@ int main() {
 
   // 20. Display the result of dividing the first float by the second
   //    e.g., 3.20 / 2.10 = 1.52 (use the two variables and the calculated value in the output)
-
-  // QUESTION: Why is there no modulo (%) operation required for the float variables?
 
   return 0;
 }

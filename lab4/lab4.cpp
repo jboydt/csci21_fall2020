@@ -23,11 +23,11 @@ void initItem(Item &i, string name, double price, unsigned int quantity) {}
 // Compute the total value of an item (price * quantity)
 double totalValue(const Item &i) { return 0.0; }
 
-// Reduce the quantity of an Item.
+// Reduce the quantity of an Item by a specified amount.
 // If amount > Item.quantity, set Item.quantity to 0.
 void reduceQuantity(Item &i, unsigned int amount) {}
 
-// Increase the quantity of an Item.
+// Increase the quantity of an Item by a specified amount.
 void increaseQuantity(Item &i, unsigned int amount) {}
 
 // Example: "Apples (price: $0.99, quantity: 3)"
