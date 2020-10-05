@@ -20,8 +20,16 @@ struct Item {
   unsigned int quantity;
 };
 
+// Returns true if i1.name comes before (lexicographicall) i2.name, otherwise
+// returns false
 bool compareByName(const Item& i1, const Item& i2);
+
+// Returns true if i1.price comes before (is less than) i2.price, otherwise
+// returns false
 bool compareByPrice(const Item& i1, const Item& i2);
+
+// Returns true if i1.quantity comes before (is less than) i2.quantity, otherwise
+// returns false
 bool compareByQuantity(const Item& i1, const Item& i2);
 
 // Return a string representation of an Item
@@ -57,13 +65,13 @@ public:
   // Clear all of the items from the inventory
   void clear();
 
-  // Sort the inventory by item name, using std::sort
+  // Sort the inventory by item name, using std::sort and compareByName function
   void sortByName();
 
-  // Sort the inventory by item price, using std::sort
+  // Sort the inventory by item price, using std::sort and compareByPrice function
   void sortByPrice();
 
-  // Sort the inventory by item quantity, using std::sort
+  // Sort the inventory by item quantity, using std::sort and compareByQuantity function
   void sortByQuantity();
 
   // Return a string representation of the inventory
