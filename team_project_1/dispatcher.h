@@ -30,6 +30,7 @@ public:
   //          Send the truck out for a delivery
   //          Increment deliveries
   //          Load a Box onto the now empty Truck
+  //          Make an empty box
   //          Add the incoming weight to the now empty Box
   //        Else -- empty the Box and add the incoming weight
   void placeOrder(unsigned int weight);
