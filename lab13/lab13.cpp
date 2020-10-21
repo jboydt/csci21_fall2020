@@ -48,7 +48,7 @@ string vectorBackwardsAsString (const vector<int>& v, int startIndex) {
 // Unit test. Do not alter.
 //
 
-TTEST_CASE("recursive functions") {
+TEST_CASE("recursive functions") {
 
 	SUBCASE("recursive factorial function") {
 		CHECK_EQ(factorial(0), 1);
